@@ -1,3 +1,3 @@
-# ambientesydisenos
+# ambientesyobjetos
 
 Site Ambientes y Objetos
