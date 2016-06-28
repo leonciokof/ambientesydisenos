@@ -6,9 +6,11 @@ $(window).load(function() {
 	$('body').delay(350).css({'overflow':'visible'});
 })
 
+var date = new Date();
+document.getElementById('year').innerText = date.getFullYear();
 
 //enter the count down date using the format year, month, day, time:time
-$(".count-down").ccountdown(2015,12,30,'16:29');
+$(".count-down").ccountdown(date.getFullYear(), date.getMonth() + 4, 1,'09:00');
 
 // Utilizing the Modernizr object created to implement placeholder functionality
 function hasPlaceholderSupport() {
@@ -51,7 +53,7 @@ $(document).ready(function() {
     });
   });
 
-  $("a.tool-tip").tooltip();   
+  $("a.tool-tip").tooltip();
 
 });
 
